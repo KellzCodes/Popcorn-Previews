@@ -87,25 +87,25 @@ class Video:
         self.trailer = trailer
 ```
 
-##### title
+#### title
 Title is a string value which is the name of the video
 
-##### isMovie
+#### isMovie
 isMovie is a boolean value that determines whether the video is a movie
 
-##### isShow
+#### isShow
 isShow is a boolean value that determines whether the video is a tv show
 
-##### plot
+#### plot
 plot is a string value that says what the video is about
 
-##### poster
+#### poster
 poster is a string value which is the link to the video's promotional art work
 
-##### trailer
+#### trailer
 trailer a string value which is the link to the video's youtube trailer
 
-##### show_info method
+#### show_info method
 This method can be called on any Video (Movie or Show) object to print the object's title, isMovie, isShow, and plot. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
@@ -151,7 +151,7 @@ Example of output
     reluctant son.
 ```
 
-##### show_trailer method
+#### show_trailer method
 This method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
@@ -186,7 +186,7 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
     godfather.show_trailer()
 ```
 
-##### show_poster method
+#### show_poster method
 This method can be called on any Video (Movie or Show) object to launch the object's promotional art work in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
@@ -224,8 +224,8 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ### Movie Object Class
 The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
-##### Movie Constructor Method
-The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie.title), [isMovie](#movie.isMovie), [isShow](#movie.isShow), [plot](#movie.plot), [poster](#movie.poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie.duration), [director](#movie.direction), [producer](#movie.producer). 
+#### Movie Constructor Method
+The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie.title), [isMovie](#movie.isMovie), [isShow](#movie.isShow), [plot](#movie.plot), [poster](#movie.poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie.duration), [director](#movie.director), [producer](#movie.producer). 
 
 ```
 class Movie(Video):
@@ -240,31 +240,31 @@ class Movie(Video):
 
 More detailed explanation is documented in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
-##### movie.title
+#### movie.title
 A string variable inherited from Video. This is the Movie's name.
 
-##### movie.duration
+#### movie.duration
 String value of the length of time the movie lasts. Unique to Movie class.
 
-##### movie.isMovie
+#### movie.isMovie
 A boolean variable inherited from Video. This confirms the video is a movie.
 
-##### movie.isShow
+#### movie.isShow
 A boolean variable inherited from Video. This confirms the video is not a tv show.
 
-##### movie.plot
+#### movie.plot
 A string variable inherited from Video. This says what the movie is about.
 
-##### movie.director
+#### movie.director
 A string variable unique to Movie class. This is the name of the movie director.
 
-##### movie.producer
+#### movie.producer
 A string variable unique to Movie class. This says the name of the movie's production company.
 
-##### movie.poster
+#### movie.poster
 A string variable inherited from Video. This is the link to the movie poster.
 
-##### movie.trailer
+#### movie.trailer
 A string variable inherited from Video. This is the link to the youtube movie trailer
 
 How to create a movie object
