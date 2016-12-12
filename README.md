@@ -66,6 +66,7 @@ kelli_movie_project-master.zip/
 ├── fresh_tomatoes.py
 ├── media.py
 └── README.md
+```
 
 ## Documentation
 
