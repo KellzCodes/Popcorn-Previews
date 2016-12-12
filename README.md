@@ -26,7 +26,7 @@ The entire project can be cloned using this link: https://github.com/keldavis/ke
 import media
 import fresh_tomatoes
 
-# movie arguments
+# movie variables
 title = godfather
 duration = "2h 58m "
 isMovie = True
@@ -74,7 +74,7 @@ kelli_movie_project-master.zip/
 This class creates an object called video. Video is a blue print for video objects. It has two children called Movie and Show. This class can be found in the [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) file.
     
 #### Constructor Method
-The constructor method is called when a new Video (Movie or Show) is created and must include six arguments -- [title](#title), [isMovie](#isMovie), [isShow](#isShow), [plot](#plot), [poster](#poster), and [trailer](#trailer). The details for each argument are provided below.
+The constructor method is called when a new Video (Movie or Show) is created and must include six arguments -- [title](#title), [isMovie](#is-Movie), [isShow](#is-Show), [plot](#plot), [poster](#poster), and [trailer](#trailer). The details for each argument are provided below.
 
 ```
 class Video:
@@ -90,10 +90,10 @@ class Video:
 #### title
 Title is a string value which is the name of the video
 
-#### isMovie
+#### is Movie
 isMovie is a boolean value that determines whether the video is a movie
 
-#### isShow
+#### is Show
 isShow is a boolean value that determines whether the video is a tv show
 
 #### plot
@@ -123,17 +123,6 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ```
     import media
 
-    # movie arguments
-    title = godfather
-    duration = "2h 58m "
-    isMovie = True
-    isShow = False
-    plot = "The aging patriarch of a crime dynasty"
-    director = "Francis Ford Coppola"
-    producer = "Paramount Pictures"
-    poster = "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
-    trailer = "https://www.youtube.com/watch?v=sY1S34973zA"
-
     # Create Movie Object
     godfather = media.Movie(title, duration, isMovie, isShow, plot, director, producer, poster, trailer)
     
@@ -151,7 +140,7 @@ Example of output
     reluctant son.
 ```
 
-#### show_trailer method
+### show_trailer method
 This method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
@@ -168,17 +157,6 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ```
     import media
 
-    # movie arguments
-    title = godfather
-    duration = "2h 58m "
-    isMovie = True
-    isShow = False
-    plot = "The aging patriarch of a crime dynasty"
-    director = "Francis Ford Coppola"
-    producer = "Paramount Pictures"
-    poster = "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
-    trailer = "https://www.youtube.com/watch?v=sY1S34973zA"
-
     # Create Movie Object
     godfather = media.Movie(title, duration, isMovie, isShow, plot, director, producer, poster, trailer)
     
@@ -186,7 +164,7 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
     godfather.show_trailer()
 ```
 
-#### show_poster method
+### show_poster method
 This method can be called on any Video (Movie or Show) object to launch the object's promotional art work in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
@@ -203,17 +181,6 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ```
     import media
 
-    # movie arguments
-    title = godfather
-    duration = "2h 58m "
-    isMovie = True
-    isShow = False
-    plot = "The aging patriarch of a crime dynasty"
-    director = "Francis Ford Coppola"
-    producer = "Paramount Pictures"
-    poster = "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
-    trailer = "https://www.youtube.com/watch?v=sY1S34973zA"
-
     # Create Movie Object
     godfather = media.Movie(title, duration, isMovie, isShow, plot, director, producer, poster, trailer)
     
@@ -225,7 +192,7 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Movie Constructor Method
-The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie.title), [isMovie](#movie.isMovie), [isShow](#movie.isShow), [plot](#movie.plot), [poster](#movie.poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie.duration), [director](#movie.director), [producer](#movie.producer). 
+The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-Movie), [isShow](#movie-is-Show), [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
 
 ```
 class Movie(Video):
@@ -240,32 +207,32 @@ class Movie(Video):
 
 More detailed explanation is documented in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
-#### movie.title
-A string variable inherited from Video. This is the Movie's name.
+#### movie title
+movie.title is a string variable inherited from Video. This is the Movie's name.
 
-#### movie.duration
-String value of the length of time the movie lasts. Unique to Movie class.
+#### movie duration
+movie.duration is a string value of the length of time the movie lasts. Unique to Movie class.
 
-#### movie.isMovie
-A boolean variable inherited from Video. This confirms the video is a movie.
+#### movie is Movie
+movie.isMovie is a boolean variable inherited from Video. This confirms the video is a movie.
 
-#### movie.isShow
-A boolean variable inherited from Video. This confirms the video is not a tv show.
+#### movie is Show
+movie.isShow is a boolean variable inherited from Video. This confirms the video is not a tv show.
 
-#### movie.plot
-A string variable inherited from Video. This says what the movie is about.
+#### movie plot
+movie.plot is a string variable inherited from Video. This says what the movie is about.
 
-#### movie.director
-A string variable unique to Movie class. This is the name of the movie director.
+#### movie director
+movie.director is a string variable unique to Movie class. This is the name of the movie director.
 
-#### movie.producer
-A string variable unique to Movie class. This says the name of the movie's production company.
+#### movie producer
+movie.producer is a string variable unique to Movie class. This says the name of the movie's production company.
 
-#### movie.poster
-A string variable inherited from Video. This is the link to the movie poster.
+#### movie poster
+movie.poster is a string variable inherited from Video. This is the link to the movie poster.
 
-#### movie.trailer
-A string variable inherited from Video. This is the link to the youtube movie trailer
+#### movie trailer
+movie.trailer is a string variable inherited from Video. This is the link to the youtube movie trailer
 
 How to create a movie object
 
