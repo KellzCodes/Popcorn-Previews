@@ -92,10 +92,9 @@ desperate_housewives = media.Show("Desperate Housewives", "Season 8", False, Tru
                                   "ABC", "https://upload.wikimedia.org/wikipedia/en/4/4a/DHWS8Promo.jpg",
                                   "https://www.youtube.com/watch?v=GVBCqGtkvvA")
 
+
 # Put video objects in an array
 videos = [godfather, fresh, higher_learning, hotel_transylvania_2, lion_king, cinderella,
           scrubs, ahs_coven, ahs_murder_house, will_grace, oz, desperate_housewives]
 
 fresh_tomatoes.open_videos_page(videos) # put videos array in method that renders webpage
-
-
