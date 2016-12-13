@@ -289,3 +289,9 @@ More examples of Movie objects are found in
 ### Show Object Class
 The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in 
 [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
+
+#### Show Constructor Method
+The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the arguments are 
+inherited from its parent, the Video class: [title](#show-title), [isMovie](#show-is-movie), [isShow](#show-is-show), 
+[plot](#show-plot), [poster](#show-poster), [trailer](#show.trailer). There are 3 variables that are not inherited 
+and are unique to class Show: [season](#show-season), [episodes](#show-episodes), [station](#show-station).
