@@ -1,7 +1,10 @@
 # Kelli Movie Trailer Project
 ## A simple movie trailer website project for Udacity's [Full-Stack Nanodegree Program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
-This project demonstrates the use, in Python, a parent Video object class and two children object classes called Movie and Show. The purpose is to create a static webpage that displays a listing of various movies and tv shows and links each medium to its respective trailer videos on youtube. The project also makes use of HTML, CSS, JQuery, and JavaScript.
+This project demonstrates the use, in Python, a parent Video object class and two children object classes called Movie 
+and Show. The purpose is to create a static webpage that displays a listing of various movies and tv shows and links 
+each medium to its respective trailer videos on youtube. The project also makes use of HTML, CSS, JQuery, and 
+JavaScript.
 
 ## Table of Contents
 
@@ -16,11 +19,15 @@ The files can be downloaded [here](https://github.com/keldavis/kelli_movie_proje
 The entire project can be cloned using this link: https://github.com/keldavis/kelli_movie_project.git
 
 ## Quick Start
-- After downloading the project, the web page can be created by importing [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) and [fresh_tomatoes.py](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.py) into your new python file.
+- After downloading the project, the web page can be created by importing 
+[media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) and 
+[fresh_tomatoes.py](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.py) into your new python 
+file.
 - Create Video objects by calling either media.Movie or media.Show and supply 9 arguments. 
 - media.Movie parameters are: title, duration, isMovie, isShow, plot, director, producer, poster, and trailer.
 - media.Show parameters are: title, season, isMovie, isShow, episodes, plot, station, poster, trailer.
-- To generate the web page, make an array of all the movie and show objects and use it to call this function: fresh_tomatoes.open_movies_page().
+- To generate the web page, make an array of all the movie and show objects and use it to call this function: 
+fresh_tomatoes.open_movies_page().
 
 ```
 import media
@@ -48,7 +55,8 @@ fresh_tomatoes.open_movies_page(videos)
 
 ```
 
-More detailed examples of various movie and show objects can be found in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
+More detailed examples of various movie and show objects can be found in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
 ## File Directory
 Within the zip file, you'll find the following directories and files:
@@ -73,14 +81,19 @@ kelli_movie_project-master.zip/
 - [Show Info Method](#show-info-method)
 - [Show Trailer Method](#show-trailer-method)
 - [Show Poster Method](#show-poster-method)
-- [Movie Object Class](#movie-object-class)
+- [Movie Class](#movie-object-class)
+- [Show Class](#show-object-class)
 
 
 ### Video Object Parent Class
-This class creates an object called video. Video is a blue print for video objects. It has two children called Movie and Show. This class can be found in the [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) file.
+This class creates an object called video. Video is a blue print for video objects. 
+It has two children called Movie and Show. This class can be found in the 
+[media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) file.
     
 #### Video Constructor Method
-The constructor method is called when a new Video (Movie or Show) is created and must include six arguments -- [title](#title), [isMovie](#is-Movie), [isShow](#is-Show), [plot](#plot), [poster](#poster), and [trailer](#trailer). The details for each argument are provided below.
+The constructor method is called when a new Video (Movie or Show) is created and must include six arguments 
+-- [title](#title), [isMovie](#is-Movie), [isShow](#is-Show), [plot](#plot), [poster](#poster), and [trailer](#trailer). 
+The details for each argument are provided below.
 
 ```
 class Video:
@@ -112,7 +125,8 @@ poster is a string value which is the link to the video's promotional art work
 trailer a string value which is the link to the video's youtube trailer
 
 ### show info method
-The show_info() method can be called on any Video (Movie or Show) object to print the object's title, isMovie, isShow, and plot. This method is useful for testing but is not used in the code that generates the finished web page.
+The show_info() method can be called on any Video (Movie or Show) object to print the object's title, isMovie, isShow, 
+and plot. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
@@ -124,7 +138,8 @@ Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/mast
         print "Plot - " + self.plot
 ```
      
-How to call the method in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
+How to call the method in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
 ```
     import media
@@ -147,7 +162,8 @@ Example of output
 ```
 
 ### show trailer method
-The show_trailer() method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
+The show_trailer() method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a 
+web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
@@ -158,7 +174,8 @@ import webbrowser
         webbrowser.open(self.trailer)
 ``` 
 
-How to call the method in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
+How to call the method in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
 ```
     import media
@@ -171,7 +188,8 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ```
 
 ### show poster method
-The show_poster() method can be called on any Video (Movie or Show) object to launch the object's promotional art work in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
+The show_poster() method can be called on any Video (Movie or Show) object to launch the object's promotional art work 
+in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
@@ -182,7 +200,8 @@ import webbrowser
         webbrowser.open(self.poster)
 ``` 
 
-How to call the method in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
+How to call the method in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
 ```
     import media
@@ -195,10 +214,14 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 ```
 
 ### Movie Object Class
-The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
+The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located 
+in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Movie Constructor Method
-The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
+The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are 
+inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), 
+[plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited 
+and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
 
 ```
 class Movie(Video):
@@ -260,4 +283,9 @@ How to create a movie object
     godfather = media.Movie(title, duration, isMovie, isShow, plot, director, producer, poster, trailer)
 ```
 
-More examples of Movie objects are found in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
+More examples of Movie objects are found in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
+
+### Show Object Class
+The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in 
+[media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
