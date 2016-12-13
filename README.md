@@ -198,7 +198,7 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
 The Movie Object Class consists of 9 class variables and a simple constructor method. The code is located in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Movie Constructor Method
-The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-Movie), [isShow](#movie-is-Show), [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
+The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
 
 ```
 class Movie(Video):
@@ -219,10 +219,10 @@ movie.title is a string variable inherited from Video. This is the Movie's name.
 #### movie duration
 movie.duration is a string value of the length of time the movie lasts. Unique to Movie class.
 
-#### movie is Movie
+#### movie is movie
 movie.isMovie is a boolean variable inherited from Video. This confirms the video is a movie.
 
-#### movie is Show
+#### movie is show
 movie.isShow is a boolean variable inherited from Video. This confirms the video is not a tv show.
 
 #### movie plot
