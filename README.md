@@ -221,7 +221,7 @@ in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.
 The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are 
 inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), 
 [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited 
-and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
+and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). More details on [how to create a Movie object](#how-to-create-a-movie-object) are presented below.
 
 ```
 class Movie(Video):
@@ -263,13 +263,13 @@ movie.poster is a string variable inherited from Video. This is the link to the 
 #### movie trailer
 movie.trailer is a string variable inherited from Video. This is the link to the youtube movie trailer
 
-How to create a movie object
+#### How to create a Movie object
 
 ```
     import media
 
-    # movie arguments
-    title = godfather
+    # movie variables
+    title = "godfather"
     duration = "2h 58m "
     isMovie = True
     isShow = False
@@ -294,4 +294,67 @@ The Movie Object Class consists of 9 class variables and a simple constructor me
 The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the arguments are 
 inherited from its parent, the Video class: [title](#show-title), [isMovie](#show-is-movie), [isShow](#show-is-show), 
 [plot](#show-plot), [poster](#show-poster), [trailer](#show.trailer). There are 3 variables that are not inherited 
-and are unique to class Show: [season](#show-season), [episodes](#show-episodes), [station](#show-station).
+and are unique to class Show: [season](#show-season), [episodes](#show-episodes), [station](#show-station). More details on [how to create a Show object](#how-to-create-a-show-object) are presented below.
+
+```
+class Show(Video):
+
+    def __init__(self, title, season, isMovie, isShow, episodes, plot, station, poster, trailer):
+
+        Video.__init__(self, title, isMovie, isShow, plot, poster, trailer) # Initializes the variables of class Show
+
+        self.episodes = episodes
+        self.season = season
+        self.station = station
+```
+
+More detailed explanation is documented in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
+
+#### show title
+show.title is a string variable inherited from Video. This is the Tv Show's name.
+
+#### show season
+show.season is a string variable unique to class Show. This says which season of the TV Show is presented.
+
+#### show is Movie
+show.isMovie is a boolean value inherited from Video. This confirms that the video is not a movie.
+
+#### show is Show
+show.isShow is a boolean value inherited from Video. This confirms that the video is a tv show.
+
+#### show episodes
+show.episodes is a string value that is unique to class Show. This says how many episodes is in the season.
+
+#### show plot
+show.plot is a string value inherited from Video. This says what the tv show is about.
+
+#### show station
+show.station is a string value that is unique to class Show. This says what tv station the show airs.
+
+#### show poster
+show.poster is a string value inherited from Video. This is a link to the tv show's promotional art.
+
+#### show trailer
+show.trailer is a string value inherited from Video. This is a link to the tv show's youtube preview.
+
+#### How to create a Show object
+
+```
+    import media
+
+    # show variables
+    title = "scrubs"
+    season = "Season 3"
+    isMovie = False
+    isShow = True
+    episodes = "22 episodes"
+    plot = "Dr JD learns the way of life and medicine"
+    station = "ABC"
+    poster = "https://upload.wikimedia.org/wikipedia/en/4/45/Scrubs-s3-dvd.jpg"
+    trailer = "https://www.youtube.com/watch?v=do9jR8Guz_E"
+
+    # Create Movie Object
+    scrubs = media.Show(title, season, isMovie, isShow, episodes, plot, station, poster, trailer)
+```
+
+More examples of Show objects are found in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
