@@ -1,5 +1,5 @@
 # Kelli Movie Trailer Project
-### A simple movie trailer website project for Udacity's [Full-Stack Nanodegree Program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
+## A simple movie trailer website project for Udacity's [Full-Stack Nanodegree Program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
 This project demonstrates the use, in Python, a parent Video object class and two children object classes called Movie and Show. The purpose is to create a static webpage that displays a listing of various movies and tv shows and links each medium to its respective trailer videos on youtube. The project also makes use of HTML, CSS, JQuery, and JavaScript.
 
@@ -26,7 +26,7 @@ The entire project can be cloned using this link: https://github.com/keldavis/ke
 import media
 import fresh_tomatoes
 
-# movie variables
+# video variables
 title = godfather
 duration = "2h 58m "
 isMovie = True
@@ -50,7 +50,7 @@ fresh_tomatoes.open_movies_page(videos)
 
 More detailed examples of various movie and show objects can be found in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
-### File Directory
+## File Directory
 Within the zip file, you'll find the following directories and files:
 
 ```
@@ -69,11 +69,17 @@ kelli_movie_project-master.zip/
 ```
 
 ## Documentation
+- [Video Class](#video-object-parent-class)
+- [Show Info Method](#show-info-method)
+- [Show Trailer Method](#show-trailer-method)
+- [Show Poster Method](#show-poster-method)
+- [Movie Object Class](#movie-object-class)
+
 
 ### Video Object Parent Class
 This class creates an object called video. Video is a blue print for video objects. It has two children called Movie and Show. This class can be found in the [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) file.
     
-#### Constructor Method
+#### Video Constructor Method
 The constructor method is called when a new Video (Movie or Show) is created and must include six arguments -- [title](#title), [isMovie](#is-Movie), [isShow](#is-Show), [plot](#plot), [poster](#poster), and [trailer](#trailer). The details for each argument are provided below.
 
 ```
@@ -105,8 +111,8 @@ poster is a string value which is the link to the video's promotional art work
 #### trailer
 trailer a string value which is the link to the video's youtube trailer
 
-#### show_info method
-This method can be called on any Video (Movie or Show) object to print the object's title, isMovie, isShow, and plot. This method is useful for testing but is not used in the code that generates the finished web page.
+### show info method
+The show_info() method can be called on any Video (Movie or Show) object to print the object's title, isMovie, isShow, and plot. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
@@ -140,8 +146,8 @@ Example of output
     reluctant son.
 ```
 
-### show_trailer method
-This method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
+### show trailer method
+The show_trailer() method can be called on any Video (Movie or Show) object to launch the object's youtube trailer in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
@@ -164,8 +170,8 @@ How to call the method in [entertainment_center.py](https://github.com/keldavis/
     godfather.show_trailer()
 ```
 
-### show_poster method
-This method can be called on any Video (Movie or Show) object to launch the object's promotional art work in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
+### show poster method
+The show_poster() method can be called on any Video (Movie or Show) object to launch the object's promotional art work in a web browser. This method is useful for testing but is not used in the code that generates the finished web page.
 
 Method from [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
