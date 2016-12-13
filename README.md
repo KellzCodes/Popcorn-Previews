@@ -92,7 +92,7 @@ It has two children called Movie and Show. This class can be found in the
     
 #### Video Constructor Method
 The constructor method is called when a new Video (Movie or Show) is created and must include six arguments 
--- [title](#title), [isMovie](#is-Movie), [isShow](#is-Show), [plot](#plot), [poster](#poster), and [trailer](#trailer). 
+-- [title](#title), [isMovie](#is-movie), [isShow](#is-show), [plot](#plot), [poster](#poster), and [trailer](#trailer). 
 The details for each argument are provided below.
 
 ```
