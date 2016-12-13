@@ -221,7 +221,8 @@ in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.
 The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are 
 inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), 
 [plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited 
-and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). More details on [how to create a Movie object](#how-to-create-a-movie-object) are presented below.
+and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
+More details on [how to create a Movie object](#how-to-create-a-movie-object) are presented below.
 
 ```
 class Movie(Video):
@@ -234,7 +235,8 @@ class Movie(Video):
         self.producer = producer
 ```
 
-More detailed explanation is documented in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
+More detailed explanation is documented in 
+[media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
 #### movie title
 movie.title is a string variable inherited from Video. This is the Movie's name.
@@ -291,24 +293,27 @@ The Movie Object Class consists of 9 class variables and a simple constructor me
 [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Show Constructor Method
-The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the arguments are 
-inherited from its parent, the Video class: [title](#show-title), [isMovie](#show-is-movie), [isShow](#show-is-show), 
-[plot](#show-plot), [poster](#show-poster), [trailer](#show.trailer). There are 3 variables that are not inherited 
-and are unique to class Show: [season](#show-season), [episodes](#show-episodes), [station](#show-station). More details on [how to create a Show object](#how-to-create-a-show-object) are presented below.
+The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the 
+arguments are inherited from its parent, the Video class: [title](#show-title), [isMovie](#show-is-movie), 
+[isShow](#show-is-show), [plot](#show-plot), [poster](#show-poster), [trailer](#show.trailer). There are 3 variables 
+that are not inherited and are unique to class Show: [season](#show-season), [episodes](#show-episodes), 
+[station](#show-station). More details on [how to create a Show object](#how-to-create-a-show-object) are presented 
+below.
 
 ```
 class Show(Video):
 
     def __init__(self, title, season, isMovie, isShow, episodes, plot, station, poster, trailer):
 
-        Video.__init__(self, title, isMovie, isShow, plot, poster, trailer) # Initializes the variables of class Show
+        Video.__init__(self, title, isMovie, isShow, plot, poster, trailer)
 
         self.episodes = episodes
         self.season = season
         self.station = station
 ```
 
-More detailed explanation is documented in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
+More detailed explanation is documented in 
+[media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py)
 
 #### show title
 show.title is a string variable inherited from Video. This is the Tv Show's name.
@@ -357,4 +362,5 @@ show.trailer is a string value inherited from Video. This is a link to the tv sh
     scrubs = media.Show(title, season, isMovie, isShow, episodes, plot, station, poster, trailer)
 ```
 
-More examples of Show objects are found in [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
+More examples of Show objects are found in 
+[entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
