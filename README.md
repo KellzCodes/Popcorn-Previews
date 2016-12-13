@@ -83,6 +83,7 @@ kelli_movie_project-master.zip/
 - [Show Poster Method](#show-poster-method)
 - [Movie Class](#movie-object-class)
 - [Show Class](#show-object-class)
+- [Web Page Functions](#web-page-functions)
 
 
 ### Video Object Parent Class
@@ -364,3 +365,28 @@ show.trailer is a string value inherited from Video. This is a link to the tv sh
 
 More examples of Show objects are found in 
 [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py).
+
+### Web Page Functions
+The functions used to create the final web page are located in 
+[fresh_tomatoes.py](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.py). 
+
+#### Open Videos Page Function
+To create the static web page, the open_videos_page() function must be called and supplied a single variable, which is
+an array of video objects.
+
+```
+# Create array with various shows and movies
+videos = [godfather, fresh, higher_learning, hotel_transylvania_2, lion_king, cinderella,
+          scrubs, ahs_coven, ahs_murder_house, will_grace, oz, desperate_housewives]
+
+# put array in function to render webpage
+fresh_tomatoes.open_videos_page(videos)
+```
+
+Once the web page is generated, 
+[fresh_tomatoes.html](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.html) will be created
+and place in the same directory as the rest of the code. 
+
+#### Create Video Tiles Function
+The create_video_tiles() function is called by the open_videos_page(). It uses the video array as a variable and uses 
+the information from each video to create a tile to be rendered on the final web page
