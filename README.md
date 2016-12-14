@@ -389,4 +389,14 @@ and place in the same directory as the rest of the code.
 
 #### Create Video Tiles Function
 The create_video_tiles() function is called by the open_videos_page(). It uses the video array as a variable and uses 
-the information from each video to create a tile to be rendered on the final web page
+the information from each video to create a tile to be rendered on the final web page. It also extracts the YouTube id 
+from video.trailer in order to show the video when the tile is clicked by the user. 
+- This function also has two if-statements nested inside a for-loop to sort the Movie and Show objects.
+    - If video.isMovie is True and video.isShow is False, the video tile will be assigned a movie icon 
+    and will show all the characteristics that is unique to a Movie object.
+    - If video.isMovie is False and video.isShow is True, the video tile will be assigned a tv icon 
+    and will show all the characteristics that is unique to a Show object.
+
+
+
+
