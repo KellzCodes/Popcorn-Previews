@@ -295,11 +295,11 @@ The Movie Object Class consists of 9 class variables and a simple constructor me
 
 #### Show Constructor Method
 The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the 
-arguments are inherited from its parent, the Video class: [title](#show-title), [isMovie](#show-is-movie), 
-[isShow](#show-is-show), [plot](#show-plot), [poster](#show-poster), [trailer](#show.trailer). There are 3 variables 
-that are not inherited and are unique to class Show: [season](#show-season), [episodes](#show-episodes), 
-[station](#show-station). More details on [how to create a Show object](#how-to-create-a-show-object) are presented 
-below.
+arguments are inherited from its parent, the Video class: [show.title](#show-title), [show.isMovie](#show-is-movie), 
+[show.isShow](#show-is-show), [show.plot](#show-plot), [show.poster](#show-poster), [show.trailer](#show.trailer). 
+There are 3 variables that are not inherited and are unique to class Show: [show.season](#show-season), 
+[show.episodes](#show-episodes), [show.station](#show-station). More details on 
+[how to create a Show object](#how-to-create-a-show-object) are presented below.
 
 ```
 class Show(Video):
@@ -396,6 +396,9 @@ from video.trailer in order to show the video when the tile is clicked by the us
     and will show all the characteristics that is unique to a Movie object.
     - If video.isMovie is False and video.isShow is True, the video tile will be assigned a tv icon 
     and will show all the characteristics that is unique to a Show object.
+
+More details about how this method works are documented in 
+[fresh_tomatoes.py](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.py)
 
 
 
