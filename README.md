@@ -23,9 +23,9 @@ The entire project can be cloned using this link: https://github.com/keldavis/ke
 [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) and 
 [fresh_tomatoes.py](https://github.com/keldavis/kelli_movie_project/blob/master/fresh_tomatoes.py) into your new python 
 file.
-- Create Video objects by calling either media.Movie or media.Show and supply 9 arguments. 
-- media.Movie parameters are: title, duration, isMovie, isShow, plot, director, producer, poster, and trailer.
-- media.Show parameters are: title, season, isMovie, isShow, episodes, plot, station, poster, trailer.
+- Create Video objects by calling either media.Movie or media.Show and supply 9 variables. 
+- media.Movie variables are: title, duration, isMovie, isShow, plot, director, producer, poster, and trailer.
+- media.Show variables are: title, season, isMovie, isShow, episodes, plot, station, poster, trailer.
 - To generate the web page, make an array of all the movie and show objects and use it to call this function: 
 fresh_tomatoes.open_movies_page().
 
@@ -92,9 +92,9 @@ It has two children called Movie and Show. This class can be found in the
 [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py) file.
     
 #### Video Constructor Method
-The constructor method is called when a new Video (Movie or Show) is created and must include six arguments 
+The constructor method is called when a new Video (Movie or Show) is created and must include six variables. 
 -- [title](#title), [isMovie](#is-movie), [isShow](#is-show), [plot](#plot), [poster](#poster), and [trailer](#trailer). 
-The details for each argument are provided below.
+The details for each variable are provided below.
 
 ```
 class Video:
@@ -108,7 +108,7 @@ class Video:
 ```
 
 #### title
-Title is a string value which is the name of the video
+title is a string value which is the name of the video
 
 #### is Movie
 isMovie is a boolean value that determines whether the video is a movie
@@ -219,11 +219,12 @@ The Movie Object Class consists of 9 class variables and a simple constructor me
 in [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Movie Constructor Method
-The constructor method is called when a new Movie object is created. It must include 9 arguments. 6 of the arguments are 
-inherited from its parent, the Video class: [title](#movie-title), [isMovie](#movie-is-movie), [isShow](#movie-is-show), 
-[plot](#movie-plot), [poster](#movie-poster), [trailer](#movie.trailer). There are 3 variables that are not inherited 
-and are unique to class Movie: [duration](#movie-duration), [director](#movie-director), [producer](#movie-producer). 
-More details on [how to create a Movie object](#how-to-create-a-movie-object) are presented below.
+The constructor method is called when a new Movie object is created. It must include 9 variables. 6 of the variables are 
+inherited from its parent, the Video class: [movie.title](#movie-title), [movie.isMovie](#movie-is-movie), 
+[movie.isShow](#movie-is-show), [movie.plot](#movie-plot), [movie.poster](#movie-poster), 
+[movie.trailer](#movie.trailer). There are 3 variables that are not inherited and are unique to class Movie: 
+[movie.duration](#movie-duration), [movie.director](#movie-director), [movie.producer](#movie-producer). More details on 
+[how to create a Movie object](#how-to-create-a-movie-object) are presented below.
 
 ```
 class Movie(Video):
@@ -294,8 +295,8 @@ The Movie Object Class consists of 9 class variables and a simple constructor me
 [media.py](https://github.com/keldavis/kelli_movie_project/blob/master/media.py).
 
 #### Show Constructor Method
-The Tv Show constructor method is called when a new Show object is created. It must include 9 arguments. 6 of the 
-arguments are inherited from its parent, the Video class: [show.title](#show-title), [show.isMovie](#show-is-movie), 
+The Tv Show constructor method is called when a new Show object is created. It must include 9 variables. 6 of the 
+variables are inherited from its parent, the Video class: [show.title](#show-title), [show.isMovie](#show-is-movie), 
 [show.isShow](#show-is-show), [show.plot](#show-plot), [show.poster](#show-poster), [show.trailer](#show.trailer). 
 There are 3 variables that are not inherited and are unique to class Show: [show.season](#show-season), 
 [show.episodes](#show-episodes), [show.station](#show-station). More details on 
