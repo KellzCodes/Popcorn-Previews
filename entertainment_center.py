@@ -52,6 +52,30 @@ cinderella = media.Movie("Cinderella", "1h 28m ", True, False,
                          "https://upload.wikimedia.org/wikipedia/en/f/f8/Cind_1997.jpg",
                          "https://www.youtube.com/watch?v=EOKDuFW6XFo")
 
+kill_bill = media.Movie("Kill Bill: Vol. 1", "1h 51m", True, False,
+                        "The Bride wakens from a four-year coma. The child she carried in her womb is gone. Now she " +
+                        "\nmust wreak vengeance on the team of assassins who betrayed her.",
+                        "Quentin Tarantino",
+                        "A Band Apart",
+                        "https://upload.wikimedia.org/wikipedia/en/c/cf/Kill_bill_vol_one_ver.jpg",
+                        "https://www.youtube.com/watch?v=ot6C1ZKyiME")
+
+color_purple = media.Movie("The Color Purple", "2h 34m", True, False,
+                           "A black Southern woman struggles to find her identity after suffering abuse from her" +
+                           "\nfather and others over four decades.",
+                           "Steven Spielberg",
+                           "Warner Brothers",
+                           "https://upload.wikimedia.org/wikipedia/en/b/be/The_Color_Purple_poster.jpg",
+                           "https://www.youtube.com/watch?v=d83NnlL83mc")
+
+nightmare = media.Movie("The Nightmare Before Christmas", "1h 16m", True, False,
+                        "Jack Skellington, king of Halloween Town, discovers Christmas Town, but doesn't quite " +
+                        "\nunderstand the concept.",
+                        "Henry Selick",
+                        "Touchstone Pictures",
+                        "https://upload.wikimedia.org/wikipedia/en/9/9a/The_nightmare_before_christmas_poster.jpg",
+                        "https://www.youtube.com/watch?v=wr6N_hZyBCk")
+
 scrubs = media.Show("Scrubs", "Season 3", False, True, "22 Episodes ",
                     "In the unreal world of Sacred Heart Hospital, Dr. John 'JD' Dorian learns" +
                     "\nthe ways of medicine, friendship and life.",
@@ -83,7 +107,7 @@ oz = media.Show("Oz", "Season 2", False, True, "8 Episodes ",
                 "\nOz is locked down, and Emerald City prisoners" +
                 "\nare sent either to solitary or gen pop. A special" +
                 "\ncommittee is appointed to investigate the riot.",
-                "HBO", "https://upload.wikimedia.org/wikipedia/en/b/b8/Oz_titlecard.png",
+                "HBO", "https://upload.wikimedia.org/wikipedia/en/9/9d/Ozposter.jpg",
                 "https://www.youtube.com/watch?v=F00xQE1DdXo")
 
 desperate_housewives = media.Show("Desperate Housewives", "Season 8", False, True, "24 Episodes ",
@@ -92,9 +116,28 @@ desperate_housewives = media.Show("Desperate Housewives", "Season 8", False, Tru
                                   "ABC", "https://upload.wikimedia.org/wikipedia/en/4/4a/DHWS8Promo.jpg",
                                   "https://www.youtube.com/watch?v=GVBCqGtkvvA")
 
+boondocks = media.Show("The Boondocks", "Season 2", False, True, "15 Episodes",
+                       "Huey and Riley move away from the city and out to the suburbs with their irascible " +
+                       "\ngrandfather.", "Adult Swim",
+                       "https://upload.wikimedia.org/wikipedia/en/f/f6/Boondocks_season_2_DVD.png",
+                       "https://www.youtube.com/watch?v=FTMHx6JuQDw")
+
+simpsons = media.Show("The Simpsons", "Season 17", False, True, "22 Episodes",
+                      "The satiric adventures of a working-class family in the misfit city of Springfield.",
+                      "Fox",
+                      "https://upload.wikimedia.org/wikipedia/en/c/cf/The_Simpsons_-_The_17th_Season.jpg",
+                      "https://www.youtube.com/watch?v=R9fmstvhzog")
+
+family_guy = media.Show("Family Guy", "Season 14", False, True, "20 Episodes",
+                        "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life " +
+                        "\nas they are thrown from one crazy scenario to another.",
+                        "Fox",
+                        "https://upload.wikimedia.org/wikipedia/en/4/49/Family_Guy_%28season_14%29.jpg",
+                        "https://www.youtube.com/watch?v=rB_VUVUA_QI")
 
 # Put video objects in an array
-videos = [godfather, fresh, higher_learning, hotel_transylvania_2, lion_king, cinderella,
-          scrubs, ahs_coven, ahs_murder_house, will_grace, oz, desperate_housewives]
+videos = [godfather, fresh, scrubs, oz, cinderella, will_grace, desperate_housewives, lion_king, hotel_transylvania_2,
+          higher_learning, ahs_coven, ahs_murder_house, boondocks, kill_bill, color_purple, simpsons, family_guy,
+          nightmare]
 
 fresh_tomatoes.open_videos_page(videos) # put videos array in method that renders webpage
