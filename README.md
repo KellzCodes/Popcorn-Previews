@@ -9,6 +9,7 @@ JavaScript.
 ## Table of Contents
 
 - [Download](#download)
+- [How to run this application](#How-to-run-this-application)
 - [Quick Start](#quick-start)
 - [File Directory](#file-directory)
 - [Documentation](#documentation)
@@ -17,6 +18,11 @@ JavaScript.
 The files can be downloaded [here](https://github.com/keldavis/kelli_movie_project/archive/master.zip)
 
 The entire project can be cloned using this link: https://github.com/keldavis/kelli_movie_project.git
+
+## How to run this application
+- Download [zip file](https://github.com/keldavis/kelli_movie_project/archive/master.zip)
+- Extract the folder
+- Execute [entertainment_center.py](https://github.com/keldavis/kelli_movie_project/blob/master/entertainment_center.py)
 
 ## Quick Start
 - After downloading the project, the web page can be created by importing 
