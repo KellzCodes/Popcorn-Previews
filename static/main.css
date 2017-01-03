@@ -27,7 +27,6 @@ body{
 .content{
     text-align: center;
     width: 100%;
-    max-width: 720px;
     margin: auto;
 }
 
@@ -56,8 +55,6 @@ header h1{
 /* Trailer */
 #trailer .modal-dialog{
     margin-top: 200px;
-    width: 640px;
-    height: 480px;
 }
 
 #trailer .hanging-close{
