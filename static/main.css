@@ -2,6 +2,11 @@ img, embed, object, video{
     max-width: 100%;
 }
 
+a, button{
+    min-width: 48px;
+    min-height: 48px;
+}
+
 html{
     color: #EEEEEE;
     font-size: 62.5%;
