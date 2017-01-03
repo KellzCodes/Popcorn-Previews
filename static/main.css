@@ -1,3 +1,7 @@
+img, embed, object, video{
+    max-width: 100%;
+}
+
 html{
     color: #EEEEEE;
     font-size: 62.5%;
