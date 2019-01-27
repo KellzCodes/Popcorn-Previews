@@ -15,9 +15,9 @@ JavaScript.
 - [Documentation](#documentation)
 
 ## Download
-The files can be downloaded [here](https://github.com/keldavis/kelli_movie_project/archive/master.zip)
+The files can be downloaded [here](https://github.com/keldavis/Popcorn-Previews/archive/master.zip)
 
-The entire project can be cloned using this link: https://github.com/keldavis/kelli_movie_project.git
+The entire project can be cloned using this link: https://github.com/keldavis/Popcorn-Previews.git
 
 ## How to run this application
 - Download [zip file](https://github.com/keldavis/kelli_movie_project/archive/master.zip)
