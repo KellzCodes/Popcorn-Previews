@@ -1,4 +1,4 @@
-# Kelli Movie Trailer Project
+# Popcorn Previews
 ## A simple movie trailer website project for Udacity's [Full-Stack Nanodegree Program](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
 This project demonstrates the use, in Python, a parent Video object class and two children object classes called Movie 
